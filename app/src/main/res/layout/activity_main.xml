@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colour"
+    tools:context=".MainActivity" >
+<!--    android:textColor="#006"-->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="116dp"
+        android:text="Get Weather"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:background="@drawable/txtbroder"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="66dp"/>
+
+    <TextView
+        android:id="@+id/currentweathere"
+        android:layout_width="248dp"
+        android:layout_height="175dp"
+        android:background="@drawable/txtbroder"
+        android:text="                       "
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/searchtxt"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:text=" Search Location"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:background="@drawable/txtbroder"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <TextView
+        android:id="@+id/crntlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colombo"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/timendate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tue,  25 Sep"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
