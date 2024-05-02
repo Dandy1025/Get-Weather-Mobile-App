@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/day1details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colour"
+    tools:context=".MainActivity2">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="51dp"
+        android:layout_height="58dp"
+        android:background="@drawable/txtbroder"
+        app:srcCompat="@drawable/car_ui_icon_arrow_back"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="9dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="306dp"
+        android:layout_height="60dp"
+        android:text="Get Weather"
+        android:textAlignment="center"
+        android:textColor="#55d0ff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="9dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d1img"
+        android:layout_width="79dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/cloudy"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/bg1"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/bg2"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:text=" Today"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:text="7 Days Forecast"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/d1condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:text="28 C°"
+        android:textColor="#888888"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/d1condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:text="32 C°"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/d1Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-95dp"
+        android:text="Sep 25"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/date1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/bg3"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/bg5"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/bg6"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/bg7"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="WED"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="256dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d2date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 26"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d2img"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/sunny"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d2condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="26 C°"
+        android:textColor="#888888"
+        android:textSize="30dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/d2condi217"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="28 C°"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/date3"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="THUR"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d3date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 27"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="390dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d3img"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/sunny_cloudy"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="347dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/bg4"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/transparentborder"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/bg3"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d3condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="22 C°"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#888888"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d3condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="24 C°"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="357dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/date4"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="FRI"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="475dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d4date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 28"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="500dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d4img"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/sunny"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="458dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d4condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="24 C°"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#888888"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="466dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d4condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="22 C°"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="466dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/date5"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="SAT"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="579dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d5date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 29"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="607dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d5img"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cloudy"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="565dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d5condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="29 C°"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="574dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d5condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="29 C°"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="574dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/date6"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="SUN"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="685dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 30"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="709dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/d6img"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/windy"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="675dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d6condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="29 C°"
+        android:textSize="30dp"
+        android:textColor="#888888"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="681dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d6condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="31 C°"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="681dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/date7"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:text="MON"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="793dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oct 1"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="819dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/sunny"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="784dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d7condi1"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="27 C°"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="793dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d7condi2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:text="28 C°"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="793dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
